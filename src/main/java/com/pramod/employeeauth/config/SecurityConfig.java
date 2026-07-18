@@ -23,6 +23,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("/actuator/prometheus").permitAll()
                         .requestMatchers("/actuator/health").permitAll()
+                        .requestMatchers("/getalluser/**").permitAll()
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/users/**").permitAll()
                         .requestMatchers("/normal/**").hasRole("NORMAL")
