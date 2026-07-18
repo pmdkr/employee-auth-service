@@ -3,13 +3,14 @@ package com.pramod.employeeauth.service.Impl;
 import com.pramod.employeeauth.model.entity.User;
 import com.pramod.employeeauth.repository.UserRepository;
 import com.pramod.employeeauth.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
+@Slf4j
 @Service
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
@@ -23,10 +24,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User saveUser(User user) {
-        logger.info("Saving user with name {}", user.getUsername());
+        log.info("Saving user with name {}", user.getUsername());
         User savedUser = userRepository.save(user);
 
-        logger.info("User saved successfully with id: {}", savedUser.getId());
+        log.info("User saved successfully : {}", savedUser.getId());
         return savedUser;
     }
 
