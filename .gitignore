@@ -1,0 +1,76 @@
+###########################
+# Maven
+###########################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+###########################
+# Gradle (if ever used)
+###########################
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+###########################
+# Kotlin
+###########################
+.kotlin/
+
+###########################
+# IntelliJ IDEA
+###########################
+.idea/
+*.iml
+*.ipr
+*.iws
+
+###########################
+# Eclipse / STS
+###########################
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+
+###########################
+# NetBeans
+###########################
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/dist/
+/.nb-gradle/
+
+###########################
+# VS Code
+###########################
+.vscode/
+
+###########################
+# OS Files
+###########################
+.DS_Store
+Thumbs.db
+
+###########################
+# Logs
+###########################
+*.log
+logs/
+
+###########################
+# Environment files
+###########################
+.env
+.env.*
+
+###########################
+# Application secrets
+###########################
+application-local.properties
+application-secret.properties
+
+.idea/
